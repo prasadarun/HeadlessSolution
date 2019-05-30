@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="example suite 1" verbose="2"  parallel="classes" thread-count="2" >
+  <parameter name="myBrowser" value="Chrome" />
+  
+  <test name="chrome_Execution" >
+    <packages>
+      <package name="com.wordpress.xyz" />
+   </packages>
+ </test>
+  <parameter name="myBrowser" value="Firefox" />
+  <test name="Firefox_Execution" >
+    <packages>
+      <package name="com.wordpress.xyz" />
+   </packages>
+ </test>
+</suite>
+
+
+
+
+
+
+<!-- <suite name="Parameter test Suite" verbose="1">
+    This parameter will be passed to every test in this suite
+    <parameter name="myBrowser" value="chrome" />
+    <test name="Parameter Test one">
+        <classes>
+            <class name="com.wordpress.xyz.LoginpageTest">
+            </class>
+        </classes>
+    </test>
+    <test name="Parameter Test two">
+        This parameter will be passed this test only
+       <parameter name="myBrowser" value="Firefox" />
+        <classes>
+           <class name="com.wordpress.xyz.DashboardpageTest">
+            </class>
+        </classes>
+    </test>
+</suite> -->
+
+
+

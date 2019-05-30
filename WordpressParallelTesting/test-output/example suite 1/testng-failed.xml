@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" verbose="2" name="Failed suite [example suite 1]" parallel="classes">
+  <parameter name="myBrowser" value="Firefox"/>
+  <test thread-count="2" verbose="2" name="chrome_Execution(failed)" parallel="classes">
+    <classes>
+      <class name="com.wordpress.xyz.LoginpageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="getBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="teardown"/>
+          <include name="validateincorrectloginTest1"/>
+        </methods>
+      </class> <!-- com.wordpress.xyz.LoginpageTest -->
+      <class name="com.wordpress.xyz.DashboardpageTest">
+        <methods>
+          <include name="validatecommentsTest"/>
+          <include name="validatepostTest"/>
+          <include name="validatecustomizeTest"/>
+          <include name="getBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="validatefirstenrtyTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="validatecreatepageTest"/>
+        </methods>
+      </class> <!-- com.wordpress.xyz.DashboardpageTest -->
+    </classes>
+  </test> <!-- chrome_Execution(failed) -->
+  <test thread-count="2" verbose="2" name="Firefox_Execution(failed)" parallel="classes">
+    <classes>
+      <class name="com.wordpress.xyz.DashboardpageTest">
+        <methods>
+          <include name="validatecommentsTest"/>
+          <include name="validatepostTest"/>
+          <include name="validatecustomizeTest"/>
+          <include name="getBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="validatefirstenrtyTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="validatecreatepageTest"/>
+        </methods>
+      </class> <!-- com.wordpress.xyz.DashboardpageTest -->
+    </classes>
+  </test> <!-- Firefox_Execution(failed) -->
+</suite> <!-- Failed suite [example suite 1] -->

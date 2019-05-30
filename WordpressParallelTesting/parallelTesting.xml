@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="LoginTest" parallel="none" thread-count="10" >
+
+	<test name="ParallelTest1 Browser Chrome">
+		<parameter name="myBrowser" value="chrome" />
+		<classes>
+	
+		<class name="com.wordpress.xyz.LoginpageTest" />
+		<class name="com.wordpress.xyz.DashboardpageTest" />
+		</classes>
+	</test> <!-- Test -->
+
+	 <test name="ParallelTest2 Browser Firefox">
+		<parameter name="myBrowser" value="firefox" />
+		<classes>
+		<class name="com.wordpress.xyz.LoginpageTest" />
+		<class name="com.wordpress.xyz.DashboardpageTest" />
+
+		</classes>
+	</test> 
+</suite> 

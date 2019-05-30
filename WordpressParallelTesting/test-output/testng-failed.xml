@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DashboardpageTest]">
+  <test thread-count="5" name=" Browser Chrome(failed)">
+    <parameter name="myBrowser" value="chrome"/>
+    <classes>
+      <class name="com.wordpress.xyz.DashboardpageTest">
+        <methods>
+          <include name="ValidateLogin"/>
+          <include name="getBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.wordpress.xyz.DashboardpageTest -->
+    </classes>
+  </test> <!--  Browser Chrome(failed) -->
+</suite> <!-- Failed suite [DashboardpageTest] -->

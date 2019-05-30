@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parameter test Suite]">
+  <parameter name="bybrowser" value="chrome"/>
+  <test thread-count="5" name="Parameter Test one(failed)">
+    <classes>
+      <class name="com.wordpress.xyz.LoginpageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="getBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="validateloginTest"/>
+          <include name="validatetitleTest"/>
+          <include name="teardown"/>
+          <include name="validateincorrectloginTest2"/>
+          <include name="validateincorrectloginTest1"/>
+        </methods>
+      </class> <!-- com.wordpress.xyz.LoginpageTest -->
+    </classes>
+  </test> <!-- Parameter Test one(failed) -->
+  <test thread-count="5" name="Parameter Test two(failed)">
+    <parameter name="bybrowser" value="Firefox"/>
+    <classes>
+      <class name="com.wordpress.xyz.DashboardpageTest">
+        <methods>
+          <include name="validatecommentsTest"/>
+          <include name="validatepostTest"/>
+          <include name="validatecustomizeTest"/>
+          <include name="getBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="validatefirstenrtyTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="validatecreatepageTest"/>
+        </methods>
+      </class> <!-- com.wordpress.xyz.DashboardpageTest -->
+    </classes>
+  </test> <!-- Parameter Test two(failed) -->
+</suite> <!-- Failed suite [Parameter test Suite] -->
